@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+      }
+      header {
+        height: 13vh;
+        background-color: gray;
+        display: flex;
+        flex-direction: row;
+      }
+      .logo-container {
+        flex: 1;
+      }
+      .caption-text {
+        flex: 5;
+      }
+      nav {
+        height: 5vh;
+        background-color: lightblue;
+      }
+      .content {
+        flex: 1;
+        background-color: lightgreen;
+        display: flex;
+        flex-direction: row;
+        align-items:stretch;
+        flex-wrap: wrap;
+      }
+      footer {
+        height: 10vh;
+        background-color: lightcoral;
+      }
+      .box1,.box2,.box3 {
+        width: 200px;
+        height: 100px;
+        margin: 5px;
+        
+      }
+      .box1 {
+        background-color: blue;
+        order:2 ;
+      }
+      .box2 {
+        background-color: blueviolet;
+        order: 3;
+      }
+      .box3 {
+        background-color: brown;
+        order:1 ;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="image/logo.1.jpg" height="100px" width="200px" alt="">
+            </div>
+            <div class="caption-text">
+              <h1>alphabet</h1>
+            </div>
+        </header>
+        <nav><h3>Nav link hear</h3></nav>
+        <div class="content">
+           <div class="box1">1</div>
+           <div class="box2">2</div>
+           <div class="box3">3</div>
+          
+
+        </div>
+        <footer><h3>This is footer</h3></footer>
+  </body>
+</html>
